@@ -13,3 +13,7 @@ st.subheader("Introducing Streamlit in Automate Everything with Python")
 st.write("This is to demonstrate how to use Streamlit to build a simple web app.")
 st.write(df)
 st.line_chart(df)
+st.area_chart(df)
+
+myslider = st.slider("Celsius temperature")
+st.write(myslider, "In Fahrenheit is", myslider * 9 / 5 + 32)
